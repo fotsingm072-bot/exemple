@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Bon Goût - Restaurant Gastronomique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Le Bon Goût</div>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#about">À Propos</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reservation">Réservation</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1>Bienvenue au Bon Goût</h1>
+            <p>Une expérience culinaire exceptionnelle vous attend</p>
+            <a href="#menu" class="cta-button">Découvrir notre menu</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">À Propos de Nous</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Depuis 1985, Le Bon Goût s'engage à vous offrir une expérience culinaire inoubliable. Notre chef étoilé et son équipe passionnée créent des plats raffinés en utilisant uniquement les meilleurs ingrédients locaux et de saison.</p>
+                    <p>Notre restaurant allie tradition et modernité dans un cadre élégant et chaleureux. Chaque plat est une œuvre d'art culinaire, préparée avec amour et expertise pour ravir vos papilles.</p>
+                    <p>Venez découvrir notre univers gastronomique et laissez-vous séduire par nos créations uniques.</p>
+                </div>
+                <div class="about-image">
+                    <p>🍽️ Cuisine Raffinée</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <body class="page-theme">
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title typing"> Notre Menu </h2>
+            <div class="menu-grid">
+                <div class="menu-item fade-in" data-delay="0">
+                    <h3> Entrées </h3>
+                    <p> 🥗Salade de fruits </p>
+                    <p> 🥑puree d'avocat</p>
+                    <p> 🥕salade de carotte</p>
+                    <div class="price"> 30 &euro; - 40 &euro;</div>
+                    
+                </div>
+                <div class="menu-item fade-in" data-delay="200">
+                    <h3> Plats Principaux</h3>
+                    <p>  le kondre</p>
+                     <p> le koki accompagne du plantaint et la patate</p>
+                      <p>  poisson braise accompagne du miondo</p>
+                       <div class="price"> 500&euro; - 1000 &euro;</div>
+                </div>
+                <div class="menu-item fade-in" data-delay="400">
+                      <h3> Desserts</h3>
+                      <p>🎂gateau au chocolat</p>
+                      <p> 🧃jus naturels</p>
+                      <p> les crepes </p>
+                      <div class="price"> 250&euro; - 500 &euro;</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    </body>
+
+   <!-- <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title">Notre Menu</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <h3>Entrées</h3>
+                    <p> salade de fruit<br> 
+                    puree d'avocat<br>
+                    bruschetta italienne</p>
+                    <div class="price">15€ - 25€</div>
+                </div>
+                <div class="menu-item">
+                    <h3>Plats Principaux</h3>
+                    <p>poulet roti avec les legumes<br>
+                    eru and tapioca <br>
+                    sanga sans sucre et avec sucre</p>
+                    <div class="price">28€ - 45€</div>
+                </div>
+                <div class="menu-item">
+                    <h3>Desserts</h3>
+                    <p>gateau du chocolat <br>
+                    salade de fruit <br>
+                    Crème brûlée à la vanille</p>
+                    <div class="price">12€ - 18€</div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <section id="reservation" class="reservation">
+        <div class="container">
+            <h2 class="section-title">Réservation</h2>
+             <form action=""   method="POST">
+            <form class="reservation-form">
+                <div class="form-group">
+                    <label for="name">Nom complet</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Téléphone</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Heure</label>
+                    <select id="time" name="time" required>
+                        <option value="">Choisir une heure</option>
+                        <option value="19:00">19:00</option>
+                        <option value="19:30">19:30</option>
+                        <option value="20:00">20:00</option>
+                        <option value="20:30">20:30</option>
+                        <option value="21:00">21:00</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Nombre de personnes</label>
+                    <select id="guests" name="guests" required>
+                        <option value="">Choisir</option>
+                        <option value="1">1 personne</option>
+                        <option value="2">2 personnes</option>
+                        <option value="3">3 personnes</option>
+                        <option value="4">4 personnes</option>
+                        <option value="5">5 personnes</option>
+                        <option value="6">6+ personnes</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message </label>
+                    <textarea id="message" name="message" rows="4" placeholder="Allergies, préférences, occasion spéciale..."></textarea>
+                </div>
+                
+                 <input type="submit" name="bouton" value="reserver maintenant">
+            </form>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>📍 yaounde <br>
+                    nkolfoulou </p>
+                    <p>📞 697116104<br>
+                    ✉️ fotsingm072@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Horaires</h3>
+                    <p>Lundi - Vendredi: 12h00 - 14h30, 19h00 - 22h30<br>
+                    Samedi: 19h00 - 23h00<br>
+                    Dimanche: Fermé</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Suivez-nous</h3>
+                    <p>🔗 Facebook | Instagram | Twitter</p>
+                </div>
+            </div>
+            <p>&copy; 2025 Le Bon Goût. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
