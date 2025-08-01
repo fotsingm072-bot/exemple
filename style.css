@@ -183,7 +183,7 @@ section {
 /* Réservation */
 .reservation {
     background: linear-gradient(135deg, #2c3e50, #34495e);
-    color: white;
+    color: black;
 }
 
 .reservation-form {
